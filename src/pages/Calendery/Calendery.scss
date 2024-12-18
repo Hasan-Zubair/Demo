@@ -1,0 +1,314 @@
+.calendery-wrapper {
+  // height: 100vh;
+
+  // padding: 20px 30px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+
+  @media (max-width: 500px) {
+    padding: 20px 0px;
+  }
+
+  .select-time-text {
+    padding: 40px 200px 0px 134px;
+  }
+
+  @media (max-width: 500px) {
+    .select-time-text {
+      padding: 10px 0px;
+    }
+  }
+
+  .calendery-screen-top-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calendery-screen-bottom-btn {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    .calendery-btn {
+      background: #006766;
+      border: 1px solid #006766;
+      /* Shadow/xs */
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      border-radius: 4px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .css-qklzlb-MuiDayPicker-header {
+      margin: 0px 100px 0px 100px;
+    }
+  }
+
+  .calendery-screen-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 0px 15px;
+    // min-height: 80%;
+    @media (max-width: 700px) {
+      padding: 82px 9px;
+    }
+
+    .calendery-heading {
+      font-family: "Tomato Grotesk";
+      font-weight: 600;
+      color: #008083;
+      text-align: center;
+      margin: 80px 0px 27px 0px;
+    }
+
+    .bottom-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calender-wrapper {
+      border: 1px solid #eaecf0;
+
+      // padding: 9px;
+      // margin: 6px 3px;
+      margin: 33px;
+
+      @media (max-width: 500px) {
+        padding: 19px 10px;
+        margin: 0px;
+      }
+
+      .calendery-grid {
+        width: 100%;
+        .calendery-grid-item {
+          .calender-calendery {
+            width: 100%;
+            .MuiPickerStaticWrapper-content {
+              @media (max-width: 500px) {
+                min-width: 100%;
+              }
+              .MuiCalendarOrClockPicker-root {
+                .css-epd502 {
+                  width: 100%;
+                  .MuiCalendarPicker-root {
+                    // width: 68%;
+                    min-width: 67%;
+                    .MuiPickersCalendarHeader-root {
+                      @media (max-width: 500px) {
+                        padding-left: 0;
+                        padding-right: 0;
+                      }
+                    }
+                    .MuiPickersFadeTransitionGroup-root {
+                      .MuiDayPicker-header {
+                        span {
+                          margin: 6px 10px;
+                          font-size: 1.2rem;
+                          @media (max-width: 500px) {
+                            margin: 6px 12px;
+                          }
+                        }
+                      }
+                      .MuiDayPicker-slideTransition {
+                        .MuiDayPicker-monthContainer {
+                          .MuiDayPicker-weekContainer {
+                            .Mui-selected {
+                              background-color: #008083 !important;
+                              color: #fff;
+                            }
+                            .MuiButtonBase-root {
+                              margin: 4px 21px;
+                              padding: 18px;
+                              font-size: 1.2rem;
+                            }
+                            .MuiPickersDay-root {
+                              margin: 4px 10px;
+
+                              @media (max-width: 500px) {
+                                margin: 4px 1px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.time-wrapper {
+  height: 313px;
+  overflow: auto;
+  padding: 17px;
+  .time-stack {
+    .time-box {
+      border: 1px solid #d0d5dd;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+    .time-box-active {
+      border: 3px solid #008083;
+      padding: 10px 20px;
+      border-radius: 4px;
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+        color: #008083;
+      }
+    }
+  }
+}
+.calendly-back-btn {
+  background: #ffffff !important;
+  color: #344054 !important;
+  margin-top: 20px;
+  border: 1px solid #d0d5dd !important;
+
+  text-transform: capitalize !important;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05) !important;
+  border-radius: 4px;
+  @media (max-width: 500px) {
+    margin-top: 19px 0px;
+    width: 100%;
+  }
+  &:hover {
+    background-color: #006766 !important;
+    color: white !important;
+  }
+}
+
+.event-page-icon-img-wrapper {
+  display: flex;
+}
+.ScheduleEvent-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 14px;
+  // justify-content: center;
+  // align-items: center;
+  width: 43%;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+
+  .terms-checkbox-wrapper {
+    display: flex;
+  }
+
+  // height: 100%;
+  .ScheduleEvent-heading {
+    color: #10888b;
+    font-family: "Tomato Grotesk";
+    font-weight: 600;
+  }
+
+  .phone-input {
+    width: 100% !important;
+  }
+
+  .ScheduleEvent-para {
+    color: #667085;
+    font-weight: 400;
+  }
+  .forgot-pass-text {
+    font-weight: 600;
+    text-align: center;
+    color: #008284;
+  }
+  .last-text {
+    color: #667085;
+
+    font-weight: 400;
+    text-align: center;
+    span {
+      color: #008284;
+
+      font-weight: bolder;
+      cursor: pointer;
+    }
+  }
+  .ScheduleEvent-form-button {
+    background: #006766;
+    border: 1px solid #006766;
+    /* Shadow/xs */
+
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 4px;
+    text-transform: capitalize;
+
+    &:hover {
+      background: #006766;
+      border: 1px solid #006766;
+      /* Shadow/xs */
+
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      border-radius: 4px;
+      text-transform: capitalize;
+    }
+  }
+  .ScheduleEvent-form-button-loading {
+    background: #55b1b0;
+
+    /* Shadow/xs */
+
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 4px;
+    text-transform: capitalize;
+  }
+  .ScheduleEvent-form-button-disable {
+    background: grey;
+    pointer-events: none;
+    /* Shadow/xs */
+
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 4px;
+    text-transform: capitalize;
+  }
+
+  .google-ScheduleEvent-button {
+    background-color: #fff;
+    color: #344054;
+
+    border: 1px solid #d0d5dd;
+    /* Shadow/xs */
+
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+}
+
+.margin-top {
+  @media (max-width: 500px) {
+    margin-top: 20px;
+  }
+  // margin-top: 108px;
+}
+
+.bottom-box-wrapper {
+  display: flex;
+  justify-content: center;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    margin: 15px 0px;
+  }
+}

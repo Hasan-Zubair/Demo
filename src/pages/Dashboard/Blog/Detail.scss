@@ -1,0 +1,26 @@
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #008083;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkButton {
+  width: 3rem; // Set the desired width
+  height: 3rem; // Set the desired height
+  border-radius: "10px";
+}
+
+.linkIcons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

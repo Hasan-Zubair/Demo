@@ -1,0 +1,55 @@
+.vera-success-modal {
+  z-index: 13000000000 !important;
+  .MuiDialog-container {
+    align-items: flex-start;
+    .MuiPaper-root {
+      border-radius: 4px;
+      font-size: 16px;
+      .MuiDialogTitle-root {
+        background-color: #006766;
+        transition: background-color 0.5;
+        transition-delay: 0.5s;
+        &.error {
+          background-color: #d83a52;
+        }
+        color: #fff;
+        padding: 15px;
+        font-size: 18px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 10px 10px 20px;
+        .MuiButtonBase-root {
+          margin-left: auto;
+        }
+        .close-icon {
+          cursor: pointer;
+          min-width: 24px;
+          min-height: 24px;
+        }
+      }
+      .MuiDialogContent-root {
+        padding: 28px 20px;
+        font-size: 16px;
+        .MuiTypography-root {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .confirm {
+    background: #d83a52;
+  }
+  .cancel {
+    background: gray;
+  }
+  .MuiButtonBase-root {
+    margin-left: 10px;
+  }
+}

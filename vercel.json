@@ -1,0 +1,29 @@
+{
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "X-Frame-Options",
+            "value": "ALLOW-FROM https://veralegal.uk/"
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": "ALLOW-FROM https://builder.hostinger.com"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/immigration",
+        "destination": "https://veralegal.uk/immigration",
+        "permanent": true
+      },
+      {
+        "source": "/family-law",
+        "destination": "https://veralegal.uk/family-law",
+        "permanent": true
+      }
+    ]
+}

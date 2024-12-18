@@ -1,0 +1,15 @@
+.mobile-Nav {
+  box-shadow: none !important;
+  border-bottom: 1px solid #f2f4f7;
+  background-color: white !important;
+  z-index: 1111111 !important;
+
+  .mob-nav-toolbar {
+    flex-direction: row-reverse;
+  }
+}
+
+.nav-link-items {
+  text-decoration: none;
+  color: #344054;
+}

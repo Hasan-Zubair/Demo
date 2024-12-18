@@ -1,0 +1,62 @@
+.profile-setting-wrapper {
+  .MuiAvatar-root {
+    width: 70px;
+    height: 70px;
+    svg {
+      font-size: 20px;
+    }
+  }
+
+  .upload-img {
+    display: flex;
+    flex-direction: column;
+    .input-file-upload {
+      display: none;
+    }
+    .upload-img-icon {
+      font-size: 50px;
+      color: #ccc;
+    }
+    .upload-img-text {
+      font-size: 14px;
+      color: #ccc;
+    }
+  }
+}
+
+.suggestion {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.suggestion:hover {
+  background-color: #a9a9a9;
+  width: 100%;
+}
+
+.suggestion-container {
+  background-color: #ccc;
+}
+
+.inputContainer {
+  width: 100%;
+  height: 41px;
+  padding: 8.5px 14px;
+  border: 1px solid #a9a9a9;
+  border-radius: 4px;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.inputContainer:hover {
+  border-color: black;
+}
+
+.inputContainer:focus {
+  border-color: #006766;
+  border-width: 2px; /* You can adjust the value as needed */
+  border-style: solid;
+  outline: none;
+}

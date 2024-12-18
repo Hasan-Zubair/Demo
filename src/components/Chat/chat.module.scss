@@ -1,0 +1,159 @@
+.chatWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  .searchWrapper {
+    position: relative;
+    padding: 24px;
+    border-bottom: 1px solid #eaecf0;
+    h4 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #101828;
+      margin: 0;
+      margin-bottom: 24px;
+    }
+    .searchBar {
+      min-width: 100%;
+      input {
+        height: 44px;
+        padding-block: 0;
+      }
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border: 1px solid #d0d5dd !important;
+        border-radius: 4px;
+      }
+    }
+  }
+  .usersChat {
+    flex-grow: 1;
+    overflow: auto;
+    max-height: 100%;
+    .messagesWrapper {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      gap: 16px;
+    }
+    :global(.MuiDivider-root) {
+      align-items: center;
+      gap: 8px;
+      margin-block: 16px;
+      &::after,
+      &::before {
+        top: 0;
+        border: 1px solid #eaecf0;
+      }
+      :global(.MuiDivider-wrapper) {
+        font-weight: 400;
+        font-size: 14px;
+        color: #667085;
+        text-transform: none;
+        padding: 0;
+      }
+    }
+    .messageWrapper {
+      max-width: 90%;
+      margin-left: auto;
+      .details {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        h5 {
+          margin: 0 8px 0 0;
+          color: #344054;
+          font-weight: 500;
+          font-size: 14px;
+        }
+        font-weight: 400;
+        font-size: 12px;
+        color: #667085;
+        margin-bottom: 7px;
+      }
+      .message {
+        background: #007f80;
+        padding: 10px 14px;
+        box-shadow:
+          0px 1px 3px rgba(16, 24, 40, 0.1),
+          0px 1px 2px rgba(16, 24, 40, 0.06);
+        border-radius: 8px 0px 8px 8px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      &.receiver {
+        margin-left: 0;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        .message {
+          background: #f2f4f7;
+          box-shadow:
+            0px 1px 3px rgba(16, 24, 40, 0.1),
+            0px 1px 2px rgba(16, 24, 40, 0.06);
+          border-radius: 0px 8px 8px 8px;
+          color: #101828;
+        }
+      }
+      &.sender {
+        margin-right: 0;
+        display: flex;
+        gap: 6px;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        .message {
+          background: #f2f4f7;
+          box-shadow:
+            0px 1px 3px rgba(16, 24, 40, 0.1),
+            0px 1px 2px rgba(16, 24, 40, 0.06);
+          border-radius: 0px 8px 8px 8px;
+          color: #101828;
+        }
+      }
+    }
+  }
+  .sendForm {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 16px 24px 24px;
+    border-top: 1px solid #eaecf0;
+    .sendButton {
+      min-width: 44px;
+      height: 44px;
+      background: #007f80;
+      border: 1px solid #007f80;
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .sendInput {
+      width: 100%;
+      input {
+        height: 44px;
+        padding-block: 0;
+      }
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border: 1px solid #d0d5dd !important;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.searchWrapper .closeIcon {
+  position: absolute;
+  top: 22px;
+  right: 15px;
+}
+
+@media (min-width: 1200px) {
+  .chatWrapper {
+    width: 20rem; 
+  }
+}

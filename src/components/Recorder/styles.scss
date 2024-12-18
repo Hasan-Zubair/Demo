@@ -1,0 +1,97 @@
+.audio-voice-rec-wrapper {
+  background: #f5ffff;
+  border: 1px solid #008083;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  max-width: 512px;
+  margin-top: 32px;
+  .audio-box-header {
+    padding: 11px 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: #e4feff;
+    border-radius: 8px;
+    height: 42px;
+  }
+  .audio-box {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    .recoding {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      position: relative;
+      .soundWave,
+      .MuiButtonBase-root {
+        z-index: 5;
+      }
+      .soundWave {
+        max-width: 80%;
+        margin-inline: auto;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .recoded-audio {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 0 20px;
+      width: 100%;
+      margin-inline: auto;
+      .control {
+        margin-inline: 15px;
+        cursor: pointer;
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .time {
+        font-weight: 500;
+        font-size: 14px;
+        color: #008083;
+        width: 70px;
+        text-align: right;
+      }
+      gap: 10px;
+      align-items: center;
+      #waveform {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// visualizer
+.audio-visualizer-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 40px;
+  z-index: 0;
+  & > div {
+    display: inline-block;
+    width: 4px;
+    height: 10px;
+    border-radius: 10px 10px 0 0;
+    background: #008083;
+  }
+}

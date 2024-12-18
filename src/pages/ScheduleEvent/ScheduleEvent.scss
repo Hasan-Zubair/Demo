@@ -1,0 +1,121 @@
+.ScheduleEvent-wrapper {
+  // height: 100vh;
+
+  padding: 20px 30px;
+  @media (max-width: 500px) {
+    padding: 20px 0px;
+  }
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  .ScheduleEvent-screen-top-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ScheduleEvent-screen-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 82px 80px;
+    // min-height: 80%;
+    @media (max-width: 700px) {
+      padding: 82px 18px;
+    }
+
+    .event-page-icon-img-wrapper {
+      display: flex;
+      align-items: center;
+
+      font-weight: 600;
+    }
+
+    .event-page-icon-img {
+      width: 37px;
+      height: 29px;
+    }
+
+    .ScheduleEvent-form-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+
+      // height: 100%;
+      .ScheduleEvent-heading {
+        color: #10888b;
+        font-family: "Tomato Grotesk";
+        font-weight: 600;
+      }
+
+      .phone-input {
+        width: 100%;
+      }
+
+      .ScheduleEvent-para {
+        color: #667085;
+        font-weight: 400;
+      }
+      .forgot-pass-text {
+        font-weight: 600;
+        text-align: center;
+        color: #008284;
+      }
+      .last-text {
+        color: #667085;
+
+        font-weight: 400;
+        text-align: center;
+        span {
+          color: #008284;
+
+          font-weight: bolder;
+          cursor: pointer;
+        }
+      }
+      .ScheduleEvent-form-button {
+        background: #006766;
+        border: 1px solid #006766;
+        /* Shadow/xs */
+
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 4px;
+        text-transform: capitalize;
+      }
+      .ScheduleEvent-form-button-loading {
+        background: #55b1b0;
+
+        /* Shadow/xs */
+
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 4px;
+        text-transform: capitalize;
+      }
+      .ScheduleEvent-form-button-disable {
+        background: grey;
+        pointer-events: none;
+        /* Shadow/xs */
+
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 4px;
+        text-transform: capitalize;
+      }
+
+      .google-ScheduleEvent-button {
+        background-color: #fff;
+        color: #344054;
+
+        border: 1px solid #d0d5dd;
+        /* Shadow/xs */
+
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+
+        font-weight: bolder;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

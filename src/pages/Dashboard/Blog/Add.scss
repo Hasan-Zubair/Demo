@@ -1,0 +1,16 @@
+.file-input-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 10rem;
+
+  .file-input {
+    display: none;
+  }
+
+  .select-button {
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

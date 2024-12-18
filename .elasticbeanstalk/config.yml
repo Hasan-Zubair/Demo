@@ -1,0 +1,19 @@
+branch-defaults:
+  master:
+    environment: vera-ui
+environment-defaults:
+  vera-ui:
+    branch: master
+    repository: origin
+global:
+  application_name: vera_ui
+  default_ec2_keyname: vera_api
+  default_platform: Node.js 16 running on 64bit Amazon Linux 2
+  default_region: eu-west-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  sc: git
+  workspace_type: Application

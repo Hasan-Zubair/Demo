@@ -1,0 +1,281 @@
+.onboarding-screen-wrapper {
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  position: relative;
+  padding: 14px 31px;
+  .pattern {
+    position: absolute;
+    bottom: 154px;
+    left: 74px;
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+
+    @media (min-width: 1770px) {
+      bottom: 235px;
+      left: 93px;
+    }
+    @media (min-width: 1700px) and (max-width: 1769px) {
+      bottom: 267px;
+      left: 93px;
+    }
+  }
+  .onboarding-screen-top-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    svg {
+      cursor: pointer;
+    }
+  }
+  .onboarding-screen-container {
+    // margin-top: 15px;
+
+    @media (max-width: 500px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .onboarding-screen-left {
+      padding: 30px;
+      background-color: #ffffff;
+      // z-index: 1111111;
+      position: relative;
+
+      .step-title {
+        color: #008083;
+
+        .MuiStepLabel-labelContainer {
+          .Mui-active {
+            color: #008083;
+          }
+        }
+        .Mui-active {
+          .MuiSvgIcon-root {
+            color: #008083 !important;
+          }
+        }
+        .Mui-completed {
+          .MuiSvgIcon-root {
+            color: #008083 !important;
+          }
+        }
+      }
+    }
+    .screen2 {
+      .postal-label {
+        color: #667085;
+
+        font-size: 1.2rem;
+      }
+    }
+    .onboarding-screen-right {
+      padding: 60px 150px;
+      background-color: #ffffff;
+      display: flex;
+      // min-height: 80%;
+      min-height: 600px;
+      border-radius: 4px;
+      flex-direction: column;
+
+      @media (max-width: 959px) {
+        padding: 60px 23px;
+      }
+
+      //   justify-content: center;
+      //   align-items: center;
+      .heading-text {
+        color: #008083;
+        font-family: "Tomato Grotesk";
+        font-weight: 600;
+      }
+
+      .question-para {
+        display: flex;
+        align-items: center;
+      }
+
+      .questionnaire-option-selected {
+        background: #ffffff;
+        border: 2px solid #008083;
+        padding: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+
+        svg {
+          height: 200px;
+          width: 100%;
+          circle {
+            fill: #008284;
+          }
+        }
+        .option-text {
+          color: #008083;
+          margin-top: -25px;
+        }
+        &:hover {
+          background: #d4d4d4;
+          .option-text {
+            color: #ffffff;
+          }
+        }
+      }
+
+      .questionnaire-option {
+        background: #ffffff;
+        border: 1px solid #eaecf0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        border-radius: 8px;
+        svg {
+          height: 200px;
+          width: 100%;
+          circle {
+            fill: #d7d7d7;
+          }
+        }
+        .option-text {
+          color: #344054;
+
+          margin-top: -25px;
+        }
+      }
+
+      .onboarding-screen-right-item {
+        border: 1px solid #eaecf0;
+        border-radius: 8px;
+
+        cursor: pointer;
+        padding: 10px;
+        .heading-right-item {
+          color: #344054;
+
+          font-size: 1.1rem;
+        }
+      }
+      .onboarding-screen-right-item-active {
+        padding: 15px 25px;
+        background: #ffffff;
+        cursor: default;
+        border: 2px solid #008083;
+        border-radius: 8px;
+
+        .heading-right-item {
+          color: #008083;
+
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+        .text-right-item {
+          color: #667085;
+
+          font-size: 1rem;
+        }
+      }
+    }
+    .onboarding-screen-bottom-btn {
+      display: flex;
+      margin-top: 1px;
+      justify-content: flex-end;
+      .next-btn {
+        background-color: #006766;
+        margin-left: 10px;
+        text-transform: capitalize;
+        margin-top: 20px;
+      }
+
+      .disabled-next-btn {
+        margin-left: 10px;
+        text-transform: capitalize;
+        margin-top: 20px;
+      }
+
+      .voice-btn {
+        background: #ffffff;
+        /* Gray/300 */
+        color: #006766;
+        border: 1px solid #d0d5dd;
+        font-weight: 600;
+
+        /* Shadow/xs */
+        text-transform: capitalize;
+
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 4px;
+      }
+      .back-btn {
+        background: #ffffff;
+        /* Gray/300 */
+        color: #344054;
+        margin-top: 20px;
+        border: 1px solid #d0d5dd;
+
+        /* Shadow/xs */
+        text-transform: capitalize;
+
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 4px;
+
+        &:hover {
+          background-color: #006766;
+          color: white;
+        }
+        &:active {
+          background-color: #006766;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.divider-line {
+  margin-top: 10px !important;
+}
+
+.phone-input {
+  width: 100% !important;
+  padding: 20px;
+
+  :focus {
+    border-color: #006766;
+  }
+}
+
+.suggestion {
+  cursor: pointer;
+}
+
+/* Add this CSS to your stylesheet */
+.inputContainer {
+  width: 100%;
+  height: 41px;
+  padding: 8.5px 14px;
+  border: 1px solid #a9a9a9;
+  border-radius: 4px;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.inputContainer:hover {
+  border-color: black;
+}
+
+.inputContainer:focus {
+  border-color: #006766;
+  border-width: 2px; /* You can adjust the value as needed */
+  border-style: solid;
+  outline: none;
+}

@@ -1,0 +1,363 @@
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 512px) {
+  .searchBarContainer {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Stretch items to full width */
+    justify-content: center; /* Adjust as needed */
+  }
+}
+
+.sectionHeader {
+  display: inline;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.heading {
+  color: #008083;
+  display: inline;
+  margin-bottom: 35px;
+}
+
+.tableHead {
+  background-color: #f5f5f5;
+}
+
+.boldText {
+  font-size: 0.9rem;
+  color: #008083;
+}
+
+.cardWrapper {
+  background: #ffffff;
+  border: 1px solid #008083;
+  box-shadow:
+    0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  color: #101828;
+  position: relative;
+  .moreBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  .cardTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 0 24px;
+  }
+  .cardBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.tableHead h3 {
+  font-size: 18px;
+  font-family: "Tomato Grotesk", sans-serif;
+  color: #101828;
+}
+
+// filter jobs
+.toggleButton {
+  width: 100%;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px !important;
+  margin-bottom: 32px;
+  :global(.MuiToggleButton-root) {
+    padding: 10px 16px;
+    border: none;
+    font-size: 14px;
+    border-right: 1px solid #d0d5dd;
+    font-family: "Inter", sans-serif;
+    text-transform: none;
+    color: #344054;
+    margin-left: 0 !important;
+    &:global(.Mui-selected) {
+      background-color: #f9fafb;
+    }
+    &:first-of-type {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    &:last-of-type {
+      border-radius: 0;
+    }
+  }
+}
+
+// Task card
+.TaskCardWrapper {
+  background: #ffffff;
+  border: 1px solid #eaecf0;
+  box-shadow:
+    0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  color: #101828;
+  position: relative;
+  .moreBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  .cardTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 0 24px;
+  }
+  .cardBottom {
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+
+    .cardStatus {
+      .status {
+        font-weight: bolder;
+      }
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+// Table
+.dataTable-wrapper {
+  width: 100%;
+  // min-height: 300px;
+  .dataTable {
+    background: #ffffff;
+    border: 1px solid #eaecf0;
+    box-shadow:
+      0px 1px 3px rgba(16, 24, 40, 0.1),
+      0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    :global(.MuiDataGrid-columnHeaders),
+    :global(.MuiDataGrid-columnHeader) {
+      height: 44px !important;
+      min-height: 44px !important;
+      line-height: 44px !important;
+      max-height: 44px !important;
+    }
+    // :global(.MuiDataGrid-columnHeader:focus){
+    //     outline: none !important;
+    // }
+    :global(.MuiDataGrid-columnHeaderTitle),
+    :global(.MuiTableCell-root) :global(.MuiButtonBase-root) {
+      font-size: 12px;
+      line-height: 18px;
+      color: #667085;
+    }
+    :global(.MuiDataGrid-row),
+    :global(.MuiTableRow-root) {
+      &:hover {
+        background: #f9fafb;
+      }
+    }
+    :global(.MuiDataGrid-cell),
+    :global(.MuiTableCell-root) {
+      font-size: 12px;
+      color: #101828;
+      font-weight: 500;
+      .actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      &[data-field="id"] {
+        font-size: 14px;
+        color: #006766;
+        font-weight: 400;
+      }
+      .open {
+        background: #ecfdf3;
+        border-radius: 16px;
+        padding: 2px 8px;
+        display: inline-block;
+        font-size: 0.9rem;
+        text-align: center;
+        color: #027a48;
+      }
+      .closed {
+        background: #f2ecec;
+        border-radius: 16px;
+        padding: 2px 8px;
+        display: inline-block;
+        font-size: 0.9rem;
+        text-align: center;
+        color: #e21a1a;
+      }
+      .progress {
+        background: #f2ecec;
+        border-radius: 16px;
+        padding: 2px 8px;
+        display: inline-block;
+        font-size: 0.9rem;
+        text-align: center;
+        color: #be9e33;
+      }
+      .locked {
+        background: #f2ecec;
+        border-radius: 16px;
+        padding: 2px 8px;
+        display: inline-block;
+        font-size: 0.9rem;
+        text-align: center;
+        color: #650ed0;
+      }
+    }
+  }
+}
+// Table
+.dataTable-wrapper-tasks {
+  width: 100%;
+  padding: 20px 5px 20px 45px;
+  .dataTable {
+    background: #ffffff;
+    border: 1px solid #eaecf0;
+    box-shadow:
+      0px 1px 3px rgba(16, 24, 40, 0.1),
+      0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    :global(.MuiDataGrid-columnHeaders),
+    :global(.MuiDataGrid-columnHeader) {
+      height: 44px !important;
+      min-height: 44px !important;
+      line-height: 44px !important;
+      max-height: 44px !important;
+    }
+    // :global(.MuiDataGrid-columnHeader:focus){
+    //     outline: none !important;
+    // }
+    :global(.MuiDataGrid-columnHeaderTitle) {
+      font-size: 12px;
+      line-height: 18px;
+      color: #667085;
+    }
+    :global(.MuiDataGrid-row) {
+      &:hover {
+        background: #f9fafb;
+      }
+    }
+    :global(.MuiDataGrid-cell) {
+      font-size: 12px;
+      text-align: center;
+      color: #101828;
+      font-weight: 500;
+      .actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      &[data-field="id"] {
+        font-size: 14px;
+        color: #006766;
+        font-weight: 400;
+      }
+      .open {
+        background: #ecfdf3;
+        border-radius: 16px;
+        padding: 2px 8px;
+        display: inline-block;
+        font-size: 0.9rem;
+        text-align: center;
+        color: #027a48;
+      }
+      .close {
+        background: #f5e2e2;
+        border-radius: 16px;
+        padding: 2px 8px;
+        display: inline-block;
+        font-size: 12px;
+        text-align: center;
+        color: #dd0a0a;
+      }
+    }
+  }
+}
+// Add new task Modal
+
+.add_new_task_modal_btn {
+  background: #006766 !important;
+  border: 1px solid #006766 !important;
+  /* Shadow/xs */
+
+  // box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 4px;
+  text-transform: capitalize;
+  &:hover {
+    background: #006766 !important;
+    box-shadow: none !important;
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pageTitle {
+  font-family: "Tomato Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #008284;
+  margin-top: 9%;
+  margin-bottom: 2%;
+}
+
+.blogPageHeader {
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
+
+.adminSideBarItemActive {
+  background: #008284;
+  color: white;
+}

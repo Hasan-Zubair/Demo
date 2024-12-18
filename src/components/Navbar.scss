@@ -1,0 +1,100 @@
+.headerText{
+  font-size: clamp(16px, 0.8vw, 0.8vw);
+}
+
+.nav-wrapper {
+  border-bottom: 1px solid #f2f4f7;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 111111111;
+  /* margin-bottom: 29px; */
+  background: white;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 10px;
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+
+  .nav-container {
+    padding: 10px;
+    background-color: #fff;
+    display: flex !important;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .login-btn {
+        cursor: pointer;
+
+        // font-family: "Inter";
+      }
+      .started-btn {
+        background-color: #006766;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-left: 20px;
+        box-shadow: none;
+
+        text-decoration: none;
+        //   &:hover {
+        //     background-color: #000;
+        //   }
+      }
+      .voice-btn {
+        background-color: #006766;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: none;
+        margin-left: 20px;
+        text-decoration: none;
+
+        svg {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.custom-container {
+  @media (max-width: 599px) {
+    max-width: 599px !important;
+  }
+  @media (min-width: 600px) {
+    max-width: 600px !important;
+  }
+
+  @media (min-width: 960px) {
+    max-width: 960px !important;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1280px !important;
+  }
+  @media (min-width: 1920px) {
+    max-width: 1920px !important;
+  }
+}

@@ -1,0 +1,30 @@
+.settingPageTabs {
+  :global(.MuiTabs-root) {
+    min-height: unset;
+  }
+  :global(.MuiTabs-flexContainer) {
+    border: 1px solid #d0d5dd;
+    box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    button {
+      text-transform: none;
+      min-height: unset;
+      padding: 14px 16px;
+      display: block;
+      font-family: "Inter", sans-serif;
+      color: #1d2939;
+      &:global(.Mui-selected) {
+        font-weight: 600;
+        background: #f9fafb;
+      }
+      &:not(:last-of-type) {
+        border-right: 1px solid #d0d5dd;
+      }
+    }
+  }
+}
+
+.pad_60 {
+  padding: 60px 0px;
+}

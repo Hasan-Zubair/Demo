@@ -1,0 +1,22 @@
+name: Cypress Tests
+"on": push
+jobs:
+  cypress-run:
+    name: Run Cypress tests
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run Cypress
+        uses: cypress-io/github-action@v5
+        with:
+          spec: cypress/e2e/CypressVera.cy.js
+      - name: Upload test artifacts
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: test-artifacts
+          path: |
+            cypress/screenshots
+            cypress/videos
+          if-no-files-found: ignore

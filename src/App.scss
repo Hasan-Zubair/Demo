@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("./fonts/Tomato_Grotesk/TomatoGrotesk-Medium.otf") format("OpenType");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("./fonts/Tomato_Grotesk/TomatoGrotesk-SemiBold.otf")
+    format("OpenType");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Tomato Grotesk";
+  src: url("./fonts/Tomato_Grotesk/TomatoGrotesk-Bold.otf") format("OpenType");
+  font-weight: 700;
+}
+
+/* add more font same as above and specify it with weight 700 for bold and 900 for extra bold or black */
+
+.MuiFormControl-root {
+  .Mui-focused {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: #595959 !important;
+    }
+  }
+}
+
+.MuiFormControl-root {
+  .MuiInputBase-root::after {
+    border-color: #A1AEB1 !important;
+  }
+}
+
+.MuiFormGroup-root {
+  .MuiFormControlLabel-root {
+    .MuiRadio-colorPrimary {
+      color: #A3AABE !important;
+    }
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}

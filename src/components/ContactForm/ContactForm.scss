@@ -1,0 +1,126 @@
+.contact-us-wrapper {
+  background: #f7f7f7;
+  .contact-us-right {
+    padding: 80px 41px;
+
+    @media (max-width: 500px) {
+      padding: 30px 30px;
+    }
+    .contact-us-form {
+      width: 100%;
+      .text-area {
+        .MuiInputBase-root {
+          background-color: white;
+        }
+      }
+      .contact-us-btn-wrapper {
+        display: flex;
+
+        @media (max-width: 500px) {
+          flex-wrap: wrap;
+        }
+        .submit-btn-box {
+          @media (max-width: 500px) {
+            width: 100%;
+          }
+          .contact-us-btn {
+            background: #006766;
+            border-radius: 6px;
+            text-transform: capitalize;
+            padding: 10px 34px;
+
+            font-weight: 500;
+            box-shadow: none;
+            margin-right: 26px;
+            @media (max-width: 500px) {
+              width: 100%;
+            }
+          }
+          .contact-us-btn-loading {
+            //  background: #006766;
+            border-radius: 6px;
+            text-transform: capitalize;
+            padding: 10px 34px;
+            font-family: "Inter";
+            font-weight: 500;
+            box-shadow: none;
+            margin-right: 26px;
+            @media (max-width: 500px) {
+              width: 100%;
+            }
+          }
+        }
+
+        .contact-us-btn-right-desc {
+          color: #667085;
+
+          font-weight: 400;
+          @media (max-width: 500px) {
+            margin: 20px 0px;
+          }
+        }
+      }
+    }
+  }
+  .contact-us-left {
+    background: #dcebec;
+    border-radius: 0px 185px 0px 0px;
+    padding: 22px;
+
+    @media (max-width: 500px) {
+      padding: 4px;
+    }
+
+    .contact-us-heading {
+      color: #006766;
+      font-family: "Tomato Grotesk";
+      font-weight: 600;
+    }
+    .contact-us-desc {
+      color: #667085;
+
+      font-weight: 400;
+    }
+    .box-item {
+      display: flex;
+      padding: 12px 0px;
+      svg {
+        margin-top: 2px;
+      }
+      .title {
+        color: #006766;
+
+        font-weight: 600;
+      }
+      .desc {
+        color: #667085;
+
+        .anchor {
+          margin-left: 5px;
+          color: #667085;
+        }
+      }
+    }
+  }
+}
+
+.custom-container-contact {
+  @media (max-width: 599px) {
+    max-width: 599px !important;
+  }
+  @media (min-width: 600px) {
+    max-width: 530px !important;
+  }
+  @media (min-width: 960px) {
+    max-width: 890px !important;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1209px !important;
+  }
+  @media (min-width: 1820px) {
+    max-width: 1510px !important;
+  }
+  @media (min-width: 1920px) {
+    max-width: 1500px !important;
+  }
+}
